@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>Vue Example App</title>
+</head>
+
+<body>
+  <section id="app">
+    <h1>Vue Example App</h1>
+
+    <h3>Countries</h3>
+    <ul>
+      <li v-for="country in countries">
+        {{country.abbreviation}} -
+        {{country.country}}
+      </li>
+    </ul>
+
+    <h3>States</h3>
+    <ul>
+      <li v-for="state in states">
+        {{state.abbreviation}} -
+        {{state.state}}
+      </li>
+    </ul>
+  </section>
+
+  <script src="node_modules/vue/dist/vue.min.js"></script>
+  <script src="node_modules/vue-resource/dist/vue-resource.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
